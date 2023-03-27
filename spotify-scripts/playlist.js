@@ -1,3 +1,0 @@
-
-db.createCollection( 'playlist', {validator: {$jsonSchema: {bsonType: 'object',title:'playlist',required: [         'name',          'numbersongs',          'datecreation',          'status',          'songs'],properties: {name: {bsonType: 'string'},numbersongs: {bsonType: 'int'},datecreation: {bsonType: 'date'},status: {enum: 'ACTIVE','DELETED'},deletiondate: {bsonType: 'date'},songs: {bsonType: 'array',items: {
-title:'object',required: [         'idsong',          'addedby',          'dateaddition'],properties: {idsong: {bsonType: 'objectId'},addedby: {bsonType: 'objectId'},dateaddition: {bsonType: 'date'}}}}}         }      }});  
