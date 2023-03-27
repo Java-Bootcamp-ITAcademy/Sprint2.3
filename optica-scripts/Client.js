@@ -1,4 +1,0 @@
-
-db.createCollection( 'Client', {validator: {$jsonSchema: {bsonType: 'object',title:'Client',required: [         'name',          'contact',          'registeringdate',          'clientrecommended'],properties: {name: {bsonType: 'string'},contact: {bsonType: 'object',
-title:'object',required: [         'address'],properties: {address: {bsonType: 'object',
-title:'object',required: [         'street',          'number',          'city',          'postalcode',          'country'],properties: {street: {bsonType: 'string'},number: {bsonType: 'string'},floor: {bsonType: 'string'},door: {bsonType: 'string'},city: {bsonType: 'string'},postalcode: {bsonType: 'string'},country: {bsonType: 'string'}}},phonenumber: {bsonType: 'string'},email: {bsonType: 'string'}}},registeringdate: {bsonType: 'date'},clientrecommended: {bsonType: 'objectId'}}         }      }});  

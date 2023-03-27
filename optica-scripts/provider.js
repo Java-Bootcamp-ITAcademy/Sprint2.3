@@ -1,4 +1,0 @@
-
-db.createCollection( 'provider', {validator: {$jsonSchema: {bsonType: 'object',title:'provider',required: [         'name',          'contact',          'NIF'],properties: {name: {bsonType: 'string'},contact: {bsonType: 'object',
-title:'object',required: [         'address',          'phonenumber',          'email'],properties: {address: {bsonType: 'object',
-title:'object',required: [         'street',          'number',          'floor',          'door',          'city',          'postalcode',          'country'],properties: {street: {bsonType: 'string'},number: {bsonType: 'string'},floor: {bsonType: 'string'},door: {bsonType: 'string'},city: {bsonType: 'string'},postalcode: {bsonType: 'string'},country: {bsonType: 'string'}}},phonenumber: {bsonType: 'string'},email: {bsonType: 'string'},FAX: {bsonType: 'string'}}},NIF: {bsonType: 'string'}}         }      }});  

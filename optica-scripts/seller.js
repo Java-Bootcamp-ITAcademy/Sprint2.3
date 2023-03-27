@@ -1,2 +1,0 @@
-
-db.createCollection( 'seller', {validator: {$jsonSchema: {bsonType: 'object',title:'seller',required: [         'name',          'NIF'],properties: {name: {bsonType: 'string'},NIF: {bsonType: 'string'}}         }      }});  
