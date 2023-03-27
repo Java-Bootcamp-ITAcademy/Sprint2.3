@@ -1,0 +1,2 @@
+
+db.createCollection( 'channel', {validator: {$jsonSchema: {bsonType: 'object',title:'channel',required: [         'name',          'description',          'dateofcreation',          'videos'],properties: {name: {bsonType: 'string'},description: {bsonType: 'string'},dateofcreation: {bsonType: 'date'},videos: {bsonType: 'array',items: {bsonType: 'objectId'}}}         }      }});  
